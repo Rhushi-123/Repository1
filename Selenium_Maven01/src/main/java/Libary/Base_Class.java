@@ -19,8 +19,7 @@ import Data_Utility.KeyWord_Driven;
 public class Base_Class {
 	static public WebDriver driver;
 	public KeyWord_Driven kd = new KeyWord_Driven();
-	
-	
+
 	public Data_Driven dd = new Data_Driven();
 
 	Random r = new Random();
@@ -56,6 +55,5 @@ public class Base_Class {
 		driver.close();
 
 	}
-
 
 }

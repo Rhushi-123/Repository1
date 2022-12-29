@@ -21,6 +21,15 @@
           <include name="logout"/>
         </methods>
       </class> <!-- test_Cases.Tc1 -->
+      <class name="test_Cases.Tc3">
+        <methods>
+          <include name="closeApp"/>
+          <include name="login"/>
+          <include name="OpenApp"/>
+          <include name="logout"/>
+          <include name="t3"/>
+        </methods>
+      </class> <!-- test_Cases.Tc3 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

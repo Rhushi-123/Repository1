@@ -10,12 +10,12 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class Data_Driven {
-	public String excelFetch(String shName,int row,int cell) throws EncryptedDocumentException, IOException
+	public String excelFetch(String ShName,int row,int cell) throws EncryptedDocumentException, IOException
 	{
-		FileInputStream fis = new FileInputStream("C:\\Users\\manis\\eclipse-workspace\\Selenium_Maven01\\src\\test\\resources\\Excel\\Data_Driven1.xlsx");
+		FileInputStream fis = new FileInputStream("C:\\Users\\manis\\git\\repository\\Selenium_Maven01\\src\\test\\resources\\Excel\\Data_Driven1.xlsx");
 		DataFormatter df = new DataFormatter();
 		Workbook book = WorkbookFactory.create(fis);
-		Sheet sh = book.getSheet(shName);
+		Sheet sh = book.getSheet(ShName);
 		
 		String data = df.formatCellValue(sh.getRow(row).getCell(cell));
 		return data;

@@ -1,6 +1,7 @@
 package test_Cases;
 
-import org.testng.annotations.Test;
+
+
 import org.openqa.selenium.By;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -11,7 +12,7 @@ public class Tc1 extends Base_Class{
 	@Test
 	public void t1() throws Throwable {
 		
-	    driver.findElement(By.id("taskSearchControl_field")).sendKeys(dd.excelFetch("Sheet1", 0, 0));
+	    driver.findElement(By.id("taskSearchControl_field")).sendKeys(dd.excelFetch("Sheet1", 1, 1));
 
 	}
 

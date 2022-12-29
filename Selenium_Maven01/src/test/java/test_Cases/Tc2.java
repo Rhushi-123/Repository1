@@ -1,6 +1,7 @@
 package test_Cases;
 
-import org.testng.annotations.Test;
+
+
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
@@ -16,7 +17,7 @@ public class Tc2 extends Base_Class{
 	{
 		
 		driver.findElement(By.id("container_tasks")).click();
-		driver.findElement(By.cssSelector("input[placeholder='Start typing name ...']")).sendKeys(dd.excelFetch("Shee", 1, 1));
+		driver.findElement(By.cssSelector("input[placeholder='Start typing name ...']")).sendKeys(dd.excelFetch("Sheet1", 1, 1));
 	}
 
 
